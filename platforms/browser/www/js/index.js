@@ -102,30 +102,30 @@ function bound(num, low, high) {
 var assetLoader = (function() {
   // images dictionary
   this.imgs        = {
-    'bg'            : '../imgs/bg.png',
-    'sky'           : '../imgs/sky.png',
-    'backdrop'      : '../imgs/backdrop.png',
-    'backdrop2'     : '../imgs/backdrop_ground.png',
-    'grass'         : '../imgs/grass.png',
-    'avatar_normal' : '../imgs/normal_walk.png',
-    'water'         : '../imgs/water.png',
-    'grass1'        : '../imgs/grassMid1.png',
-    'grass2'        : '../imgs/grassMid2.png',
-    'bridge'        : '../imgs/bridge.png',
-    'plant'         : '../imgs/plant.png',
-    'bush1'         : '../imgs/bush1.png',
-    'bush2'         : '../imgs/bush2.png',
-    'cliff'         : '../imgs/grassCliffRight.png',
-    'spikes'        : '../imgs/spikes.png',
-    'box'           : '../imgs/boxCoin.png',
-    'slime'         : '../imgs/slime.png'
+    'bg'            : 'imgs/bg.png',
+    'sky'           : 'imgs/sky.png',
+    'backdrop'      : 'imgs/backdrop.png',
+    'backdrop2'     : 'imgs/backdrop_ground.png',
+    'grass'         : 'imgs/grass.png',
+    'avatar_normal' : 'imgs/normal_walk.png',
+    'water'         : 'imgs/water.png',
+    'grass1'        : 'imgs/grassMid1.png',
+    'grass2'        : 'imgs/grassMid2.png',
+    'bridge'        : 'imgs/bridge.png',
+    'plant'         : 'imgs/plant.png',
+    'bush1'         : 'imgs/bush1.png',
+    'bush2'         : 'imgs/bush2.png',
+    'cliff'         : 'imgs/grassCliffRight.png',
+    'spikes'        : 'imgs/spikes.png',
+    'box'           : 'imgs/boxCoin.png',
+    'slime'         : 'imgs/slime.png'
   };
 
   // sounds dictionary
   this.sounds      = {
-    'bg'            : '../sounds/bg.mp3',
-    'jump'          : '../sounds/jump.mp3',
-    'gameOver'      : '../sounds/gameOver.mp3'
+    'bg'            : 'sounds/bg.mp3',
+    'jump'          : 'sounds/jump.mp3',
+    'gameOver'      : 'sounds/gameOver.mp3'
   };
 
   var assetsLoaded = 0;                                // how many assets have been loaded
@@ -439,7 +439,7 @@ var player = (function(player) {
   player.isJumping = false;
 
   // spritesheets
-  player.sheet     = new SpriteSheet('../imgs/normal_walk.png', player.width, player.height);
+  player.sheet     = new SpriteSheet('imgs/normal_walk.png', player.width, player.height);
   player.walkAnim  = new Animation(player.sheet, 4, 0, 8);
   player.jumpAnim  = new Animation(player.sheet, 4, 9, 9);
   player.fallAnim  = new Animation(player.sheet, 4, 10, 10);
